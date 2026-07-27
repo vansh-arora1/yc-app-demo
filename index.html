@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ledgerline Origination Flow</title>
+    <link rel="stylesheet" href="./styles.css?v=20260727-12" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <div class="brand">Ledgerline</div>
+          <div class="crumb" id="summaryCrumb">Select a borrower persona, then index documents to extract the application.</div>
+        </div>
+        <div class="screen-tabs" id="screenTabs"></div>
+      </header>
+
+      <section class="loan-strip">
+        <div>
+          <span>Borrower</span>
+          <strong id="summaryBorrower">Not extracted</strong>
+        </div>
+        <div>
+          <span>Property</span>
+          <strong id="summaryProperty">Not extracted</strong>
+        </div>
+        <div>
+          <span>Loan amount</span>
+          <strong id="summaryLoanAmount">Not extracted</strong>
+        </div>
+        <div>
+          <span>Purchase price</span>
+          <strong id="summaryPrice">Not extracted</strong>
+        </div>
+        <div>
+          <span>Status</span>
+          <strong id="gateLabel">Application intake</strong>
+        </div>
+      </section>
+
+      <section id="app"></section>
+    </main>
+    <script src="./app.js?v=20260727-12"></script>
+  </body>
+</html>
